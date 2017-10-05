@@ -1,0 +1,337 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	background-color: #FFFFFF;
+}
+#wrapper{
+	width:90%;
+	margin: 0 auto;
+}
+#adbox{
+	width:300px;
+	height:300px;
+	overflow: hidden;
+	border: 1px solid #000;
+	margin:150px auto;
+	position: relative;
+	background-color: #00704a;
+}
+
+
+#apple{
+	width:300px;
+	height:300px;
+	background-image: url("art/Apple.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	position: absolute;
+	bottom: -30px;
+	z-index: 4;
+	opacity: 0;
+	animation-name:apple;
+    animation-duration: 2s;
+    animation-delay:3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes apple{
+	0%{
+		left:-350px;
+		opacity:0;
+	}
+	40%{
+		opacity: 1;
+	}
+	100%{
+		top: 60px;
+		left:90px;
+		opacity:1;
+		}
+}
+
+
+#board{
+	width:300px;
+	height:300px;
+	background-image: url("art/Board.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	position: absolute;
+	bottom: -30px;
+	z-index: 3;
+	opacity: 0;
+	animation-name:board;
+    animation-duration: 2s;
+    animation-delay:2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes board{
+	0%{
+		left:-350px;
+		opacity:0;
+	}
+	40%{
+		opacity: 1;
+	}
+	100%{
+		left:-15px;
+		opacity:1;
+		}
+}
+
+
+
+#carrots{
+	width:300px;
+	height:300px;
+	background-image: url("art/Carrots.png");
+	background-repeat: no-repeat;
+	background-size: 75%;
+	position: absolute;
+	z-index: 4;
+	opacity: 0;
+	animation-name:carrots;
+    animation-duration: 2s;
+    animation-delay:4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+}
+@keyframes carrots{
+	0%{
+		top:-350px;
+		right:-100px;
+		opacity:0;
+		    transform:rotate(40deg);
+	}
+	40%{
+		opacity: 1;
+	}
+	100%{
+		top:70px;
+		left:30px;
+		opacity:1;
+		transform:rotate(20deg);
+		}
+}
+
+#cucumber{
+	width:300px;
+	height:300px;
+	background-image: url("art/Cucumber.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	position: absolute;
+	z-index: 4;
+	opacity: 0;
+	animation-name:cucumber;
+    animation-duration: 2s;
+    animation-delay:4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+}
+@keyframes cucumber{
+	0%{
+		top:-350px;
+		right:-100px;
+		opacity:0;
+		    transform:rotate(40deg);
+	}
+	40%{
+		opacity: 1;
+	}
+	100%{
+		top:0px;
+		right:0px;
+		opacity:1;
+		transform:rotate(20deg);
+		}
+}
+
+
+#PBJ{
+	width:300px;
+	height:300px;
+	background-image: url("art/PBJ.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	position: absolute;
+	z-index: 4;
+	opacity: 0;
+	animation-name: PBJ;
+    animation-duration: 2s;
+    animation-delay:4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+}
+@keyframes PBJ{
+	0%{
+		top:-350px;
+		right:-100px;
+		opacity:0;
+		    transform:rotate(40deg);
+	}
+	40%{
+		opacity: 1;
+	}
+	100%{
+		top:70px;
+		right:0px;
+		opacity:1;
+		transform:rotate(20deg);
+		}
+}
+
+#Ranch{
+	width:300px;
+	height:300px;
+	background-image: url("art/Ranch.png");
+	background-repeat: no-repeat;
+	background-size: 75%;
+	position: absolute;
+	z-index: 4;
+	opacity: 0;
+	animation-name:ranch;
+    animation-duration: 2s;
+    animation-delay:4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+}
+@keyframes ranch{
+	0%{
+		top:-350px;
+		right:-100px;
+		opacity:0;
+		    transform:rotate(40deg);
+	}
+	40%{
+		opacity: 1;
+	}
+	100%{
+		top:160px;
+		right:0px;
+		opacity:1;
+		transform:rotate(20deg);
+		}
+}
+
+#Granite{
+	width:300px;
+	height:300px;
+	background-image: url("art/Granite.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	position: absolute;
+	z-index: 1;
+	opacity: 0;
+	animation-name:granite;
+    animation-duration: 1s;
+    animation-delay:1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+}
+@keyframes granite{
+	0%{
+		opacity:0;
+	}
+	40%{
+		opacity: 1;
+	}
+	100%{
+		top:0px;
+		right:0px;
+		opacity:1;
+		}
+}
+
+#logo{
+	width:300px;
+	height:300px;
+	background-image: url("art/logo.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	position: absolute;
+	z-index: 4;
+	opacity: 0;
+	animation-name:logo;
+    animation-duration: 2s;
+    animation-delay:4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+}
+@keyframes logo{
+	0%{
+		top:-350px;
+		right:-100px;
+		opacity:0;
+
+	}
+	40%{
+		opacity: 1;
+	}
+	100%{
+		top:0px;
+		right:-5px;
+		opacity:1;
+
+		}
+}
+/*----TYPE----*/
+
+h1{
+	font-size: 2.5em;
+	font-family: sans-serif;
+	color:#00704a;
+	z-index: 4;
+	opacity: 0;
+	position: absolute;
+	top:30px;
+	animation-name:h_one;
+    animation-duration: 2s;
+    animation-delay:5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes h_one{
+	0%{
+		left:-200px;
+	}
+	100%{
+		top: 20px;
+		left:25px;
+		opacity: 1;
+	}
+}
+
+h2{
+	font-size: 2em;
+	font-family: sans-serif;
+	color:#00704a;
+	z-index: 4;
+	opacity: 0;
+	position: absolute;
+	top:55px;
+	animation-name:h_two;
+    animation-duration: 2s;
+    animation-delay:5.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes h_two{
+	0%{
+		left:-200px;
+	}
+	100%{
+		top: 60px;
+		left:25px;
+		opacity: 1;
+	}
+}
